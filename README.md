@@ -1,3 +1,6 @@
+
+![Demo](/image_video/image.jpg)
+
 # Multimodal RAG for The Batch
 
 A **Multimodal Retrieval-Augmented Generation (RAG)** system that indexes *The Batch* news articles together with their associated images and lets you ask natural-language questions via a Gradio UI. The stack is container-first: clone, fill-in a few environment variables, and spin everything up with a single `docker compose` command.
