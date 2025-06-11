@@ -41,8 +41,8 @@ A **Multimodal Retrieval-Augmented Generation (RAG)** system that indexes *The B
 
 ```bash
 # Clone the repository
-git clone [https://github.com/your-org/MRAG_The_Batch.git](https://github.com/your-org/MRAG_The_Batch.git)
-cd MRAG_The_Batch
+git clone https://github.com/Kusm0/Multimodal_RAG.git
+cd Multimodal_RAG
 
 # Create your local environment file
 cp .env.example .env
@@ -52,7 +52,7 @@ cp .env.example .env
 docker compose up -d --build
 
 # Open the Gradio UI
-# Wait until the containers report "UI running on [http://0.0.0.0:7860](http://0.0.0.0:7860)"
+# Wait until the containers report "UI running on [http://0.0.0.0:7860]"
 # On macOS:
 open http://localhost:7860
 # Or simply visit the URL in your browser
