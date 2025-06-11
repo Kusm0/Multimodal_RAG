@@ -65,7 +65,6 @@ cp .env.example .env
 | --------------------- | ---------------------------------------------------------- |
 | `OPENAI_API_KEY`      | Your OpenAI API key (for embeddings & LLM answers)         |
 | `QDRANT_URL`          | URL of the Qdrant instance (default: `http://qdrant:6333`) |
-| `PORT`                | Host port for the Gradio UI (defaults to `7860`)           |
 
 **Running Qdrant in Docker vs on a separate VM**
 
