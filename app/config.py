@@ -10,6 +10,11 @@ HTML_CACHE_DIR_PATH = os.path.join(BASE_DIR, "app", "data", "cached_html")
 EMBEDDINGS_CACHE_DIR_PATH = os.path.join(BASE_DIR, "app", "data", "embedding_cache")
 JSONL_DATASET_PATH = os.path.join(BASE_DIR, "app", "data", "dataset_the_batch.jsonl")
 SYSTEM_PROMPT_PATH = os.path.join(BASE_DIR, "app", "system_prompt.txt")
+QA_CACHE_PATH = os.path.join(BASE_DIR, "app", "data", "eval_result", "cached_qa.jsonl")
+CSV_DATASET_PATH = os.path.join(BASE_DIR, "app", "data", "eval_result", "dataset_the_batch.csv")
+RAGAS_PATH_RESULT = os.path.join(BASE_DIR, "app", "data", "eval_result", "ragas_results")
+
+
 
 
 # --- Налаштування логування ---

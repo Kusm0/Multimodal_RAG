@@ -16,17 +16,11 @@ def url_to_filename(url: str) -> str:
     return filename
 
 def normalize_text(text: str) -> str:
-    """
-    Нормалізує текст: юнікод, зайві пробіли, нижній регістр.
-    """
     text = unicodedata.normalize("NFKC", text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
 def generate_numeric_id(article_slug: str, index: int) -> int:
-    """
-    Генерує стабільний числовий ID на основі article_slug та локального індексу.
-    """
     base_hash = int(hashlib.sha256(article_slug.encode()).hexdigest(), 16)
     numeric_id = (base_hash % 10**8) * 1000 + index
     return numeric_id

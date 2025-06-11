@@ -17,9 +17,9 @@ def call_chain(query: str) -> dict:
         }
 
     context_chunks = format_chunks_to_prompt(hits)
+    print(context_chunks)
     llm_output = generate_answer(query, context_chunks)
     chunks_info = extract_chunk_metadata(hits)
-
     return {
         "answer": llm_output.get("answer", ""),
         "best_image_caption": llm_output.get("best_image_caption", ""),

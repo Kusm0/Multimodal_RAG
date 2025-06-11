@@ -4,7 +4,7 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import VectorParams, Distance, PointStruct
 
 
-QDRANT_IP = config.QDRANT_IP_ADDRESS
+QDRANT_IP = f"{config.QDRANT_IP_ADDRESS}"
 COLLECTION_NAME = config.QDRANT_COLLECTION_NAME
 
 client = QdrantClient(QDRANT_IP)
