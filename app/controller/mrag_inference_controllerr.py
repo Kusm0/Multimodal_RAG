@@ -2,9 +2,6 @@ from app.usecase.mrag_usecase import call_chain
 
 
 def rag_interface(query: str):
-    """
-    Calls the RAG chain with the given query and formats the results for Gradio output.
-    """
     result = call_chain(query)
 
     answer = result.get("answer", "")
@@ -12,7 +9,7 @@ def rag_interface(query: str):
     image_url = result.get("best_image_url", "")
     chunks_info = result.get("chunks_info", [])
 
-    # Ensure image_url is valid, otherwise set to None to hide the image component
+
     if not (image_url and (image_url.startswith("http://") or image_url.startswith("https://"))):
         image_url = None
 

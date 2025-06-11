@@ -17,7 +17,6 @@ def call_chain(query: str) -> dict:
         }
 
     context_chunks = format_chunks_to_prompt(hits)
-    print(context_chunks)
     llm_output = generate_answer(query, context_chunks)
     chunks_info = extract_chunk_metadata(hits)
     return {

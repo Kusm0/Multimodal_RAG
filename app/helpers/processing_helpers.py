@@ -6,9 +6,6 @@ import unicodedata
 import json
 
 def url_to_filename(url: str) -> str:
-    """
-    Перетворює URL на безпечне ім’я файлу: видаляє домен, замінює / і - на _
-    """
     clean_url = url.split("?")[0]
     if "the-batch/" in clean_url:
         clean_url = clean_url.split("the-batch/")[-1]
