@@ -29,7 +29,7 @@ TAG_NAMES_ARRAY = [
 
 
 # Інші константи або налаштування
-QDRANT_IP_ADDRESS = "http://qdrant:6333"
+QDRANT_IP_ADDRESS = os.getenv("QDRANT_URL")
 QDRANT_COLLECTION_NAME = "batch_articles_embeddings"
 
 
