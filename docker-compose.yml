@@ -15,7 +15,7 @@ services:
     depends_on:
       - qdrant
     environment:
-      QDRANT_URL: "${QDRANT_IP:-qdrant}"
+      QDRANT_URL: "http://qdrant:6333"
     ports:
       - "7860:7860"
     volumes:
