@@ -71,7 +71,7 @@ cp .env.example .env
 | Variable | Description |
 |----------|-------------|
 | `OPENAI_API_KEY` | Your OpenAI API key (for embeddings & LLM answers). |
-| `QDRANT_URL` | URL of the Qdrant instance (default: `http://qdrant:6333`). |
+| `QDRANT_URL` | URL of the Qdrant instance (by defult **LEAVE IT EMPTY!**). |
 
 **Running Qdrant in Docker vs. on a separate VM**
 
